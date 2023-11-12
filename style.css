@@ -1,31 +1,42 @@
-  html {
-  background-color: #202124;
-  color: #ffffff;
-  }
-  .heading {
-    text-align: center;
-    position: fixed;
-    width: 100%;
-              }
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom:0;
-    width: 100%;
-    text-align: center;
-  }
-  a:link {
-    color: #8ab4f8;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:visited {
-    color: #c58af9;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #c58af9;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+body {
+    background-color: white;
+}
+
+@font-face {
+    font-family: jetbrains-mono;
+    src:url(fonts/JetbrainsMonoRegular-RpvmM.ttf);
+}
+
+@font-face {
+    font-family: jetbrains-bold;
+    src: url(fonts/JetbrainsMonoBold-51Xez.ttf);
+}
+
+@font-face {
+    font-family: jetbrains-title;
+    src: url(fonts/JetbrainsMonoExtrabold-ywLd5.ttf);
+}
+
+header {
+    font-family: jetbrains-title;
+}
+
+p {
+    font-family: jetbrains-mono;
+}
+
+h5 {
+    font-family: jetbrains-bold;
+}
+
+a {
+    font-family: jetbrains-title;
+}
+
+h1 {
+    font-family: jetbrains-bold;
+}
+
+div {
+    margin-top: 10px;
+}
