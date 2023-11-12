@@ -1,0 +1,34 @@
+body {
+    background-color: white;
+}
+
+@font-face {
+    font-family: jetbrains-mono;
+    src:url(fonts/JetbrainsMonoRegular-RpvmM.ttf);
+}
+
+@font-face {
+    font-family: jetbrains-bold;
+    src: url(fonts/JetbrainsMonoBold-51Xez.ttf);
+}
+
+@font-face {
+    font-family: jetbrains-title;
+    src: url(fonts/JetbrainsMonoExtrabold-ywLd5.ttf);
+}
+
+header {
+    font-family: jetbrains-title;
+}
+
+p {
+    font-family: jetbrains-mono;
+}
+
+h5 {
+    font-family: jetbrains-bold;
+}
+
+a {
+    font-family: jetbrains-title;
+}
