@@ -1,0 +1,40 @@
+{
+   "action": {
+      "default_icon": "icon/32.png",
+      "default_title": "Subway Surfers"
+   },
+   "background": {
+      "service_worker": "js/bg.js"
+   },
+   "content_scripts": [ {
+      "exclude_matches": [ "https://www.youtube.com/*", "https://twitter.com/*", "https://www.facebook.com/*", "https://www.instagram.com/*", "https://www.wikipedia.org/*" ],
+      "js": [ "js/content.js" ],
+      "matches": [ "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+      "sandbox": "sandbox allow-scripts; script-src 'self' 'unsafe-eval' blob: 'unsafe-inline'; object-src 'self' 'unsafe-eval' blob: 'unsafe-inline';child-src 'self' 'unsafe-eval' blob: 'unsafe-inline' ; worker-src 'self' 'unsafe-eval' blob: 'unsafe-inline'; script-src-elem 'self' 'unsafe-eval' blob: 'unsafe-inline'"
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "host_permissions": [  ],
+   "icons": {
+      "128": "icon/128.png",
+      "32": "icon/32.png",
+      "48": "icon/48.png",
+      "64": "icon/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvehLiuSfFkmQ9zYc+6GlwR4DdxFaswbZUrAt7kafcLy+0Zczm4j6rl370bWVq7KYsZ+wDrMeMsEQZ9FRcNcVsM6YsLg77ZhryrHsG/aabMhCNFM80pPVIrtA8CqATdMobZigzWefIK1l5P8jCQUsTaYdzySr6DMgXLtipqMM/OaTElDPwMqWTxgKiMq4HcEH9TzpKyLdo6C+ioniCGwJ8+j12hJ3kvD8jL4uo3KG4eZ+ywQkRWLJVQK7a+IfF2zy6ZvwEaJpS3cbjAwieP3pbTPpokNZ5vvK7K0K34z9bsa+UuMQmPFxs1djEn/V0eZQjxs+zSsgmIL3JAUCCNCuKQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_name__",
+   "permissions": [ "alarms", "storage" ],
+   "sandbox": {
+      "pages": [ "game.html" ]
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.9.0",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*/*" ],
+      "resources": [ "polyfill/*", "polyfill/chrome/polyfill.min.js", "polyfill/edge/polyfill.min.js", "polyfill/firefox/polyfill.min.js" ]
+   } ]
+}
