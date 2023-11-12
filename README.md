@@ -1,2 +1,2 @@
-# Gamehub
-This website is for... educational purposes...
+# web-games
+game site for educational purposes only
