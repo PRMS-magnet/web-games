@@ -17,6 +17,11 @@ body {
     src: url(fonts/JetbrainsMonoExtrabold-ywLd5.ttf);
 }
 
+@font-face {
+    font-family: jetbrains-slim;
+    src: url(fonts/JetbrainsMonoRegular-RpvmM.ttf);
+}
+
 header {
     font-family: jetbrains-title;
 }
