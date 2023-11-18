@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "grunt-browser-sync": "^2.2.0"
+  }
+}
